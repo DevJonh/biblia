@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const ContainerSelect = styled.div`
   width: 100%;
@@ -14,7 +14,7 @@ export const ContainerSelect = styled.div`
       margin-left: 10%;
     }
   }
-`;
+`
 
 export const Select = styled.select`
   position: relative;
@@ -36,7 +36,7 @@ export const Select = styled.select`
   ::-ms-expand {
     display: none;
   }
-`;
+`
 
 export const Container = styled.div`
   display: flex;
@@ -56,4 +56,10 @@ export const Container = styled.div`
       top: 20px;
     }
   }
-`;
+  @media only screen and (max-width: 730px) {
+    width: 90%;
+  }
+  @media only screen and (max-width: 460px) {
+    width: 100%;
+  }
+`

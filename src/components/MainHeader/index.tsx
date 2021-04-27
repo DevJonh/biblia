@@ -1,4 +1,4 @@
-import React, { SyntheticEvent, useState } from 'react'
+import React, { SyntheticEvent, useEffect, useState } from 'react'
 
 import Link from 'next/link'
 
@@ -11,6 +11,7 @@ const MainHeader: React.FC = () => {
   const history = useRouter()
 
   const [search, setSearch] = useState('')
+  const [input, setInput] = useState<HTMLInputElement | null>()
 
   const handleSubmit = (e: SyntheticEvent<HTMLFormElement>) => {
     e.preventDefault()

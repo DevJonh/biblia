@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const Container = styled.main`
   width: 60%;
@@ -7,8 +7,8 @@ export const Container = styled.main`
   ul {
     list-style: none;
     li {
-      font-size: 16px;
-      line-height: 26px;
+      font-size: 1rem;
+      line-height: 1.6rem;
 
       padding: 10px 20px;
       border-radius: 6px;
@@ -24,8 +24,20 @@ export const Container = styled.main`
       span {
         font-weight: bold;
         margin-right: 6px;
-        font-size: 18px;
+        font-size: 1.12rem;
       }
     }
   }
-`;
+  @media only screen and (max-width: 730px) {
+    width: 80%;
+    margin: 5rem 0 0 2.6rem;
+  }
+  @media only screen and (max-width: 460px) {
+    width: 80%;
+    margin: 5rem 0 0 1.8rem;
+  }
+  @media only screen and (max-width: 280px) {
+    width: 80%;
+    margin: 5rem 0 0 1.3rem;
+  }
+`

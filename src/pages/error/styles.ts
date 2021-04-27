@@ -25,13 +25,13 @@ export const Aside = styled.aside`
     top: -90%;
     img {
       max-width: 100%;
-      width: 60px;
+      width: 3.75rem;
       margin-right: 10px;
     }
 
     section {
       span {
-        font-size: 22px;
+        font-size: 1.3rem;
         font-weight: normal;
         letter-spacing: 2.5px;
 
@@ -45,7 +45,7 @@ export const Aside = styled.aside`
   h2 {
     background-color: #ad1517;
     width: 70%;
-    padding: 30px 50px;
+    padding: 1.8rem 3.125rem;
     border-radius: 6px;
     box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
 
@@ -55,7 +55,7 @@ export const Aside = styled.aside`
     letter-spacing: 1.5px;
     font-size: 28px;
 
-    margin-top: 80px;
+    margin-top: 5rem;
     display: flex;
     align-items: center;
     justify-content: space-between;

@@ -6,15 +6,10 @@ import Link from 'next/link'
 
 interface IListAlphabetProps {
   letters: string[]
-  page: number
   filter: string
 }
 
-const ListAlphabet: React.FC<IListAlphabetProps> = ({
-  letters,
-  page,
-  filter
-}) => {
+const ListAlphabet: React.FC<IListAlphabetProps> = ({ letters, filter }) => {
   const lettersUsed = useMemo(() => {
     let datas: string[] = []
     letters.forEach((letter) => {

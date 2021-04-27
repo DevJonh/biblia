@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const Container = styled.footer`
   width: 100%;
@@ -8,4 +8,8 @@ export const Container = styled.footer`
   color: #fff;
 
   padding: 10px 60px;
-`;
+  @media only screen and (max-width: 460px) {
+    padding: 10px 30px;
+    height: 40px;
+  }
+`

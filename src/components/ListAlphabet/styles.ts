@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const AlphabetList = styled.div`
   display: flex;
@@ -12,7 +12,11 @@ export const AlphabetList = styled.div`
   & + div {
     margin-top: 70px;
   }
-`;
+  @media only screen and (max-width: 730px) {
+    padding-left: 0;
+    margin: 0 auto;
+  }
+`
 
 export const Alphabet = styled.ul`
   width: 100%;
@@ -21,8 +25,22 @@ export const Alphabet = styled.ul`
   display: flex;
   flex-wrap: wrap;
 
-  margin-top: 80px;
-`;
+  margin-top: 5rem;
+
+  @media only screen and (max-width: 730px) {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    padding: 0 2rem;
+  }
+  @media only screen and (max-width: 460px) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  @media only screen and (max-width: 280px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+`
 export const AlphabetItem = styled.li`
   height: 60px;
   min-width: 50px;
@@ -81,4 +99,4 @@ export const AlphabetItem = styled.li`
       color: #fe9534;
     }
   }
-`;
+`

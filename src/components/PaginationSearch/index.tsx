@@ -1,12 +1,10 @@
 import React, { useMemo, useState } from 'react'
 
 import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from 'react-icons/md'
-import Link from 'next/link'
 
 import { Button, Container } from './styles'
 import { IVersesProps } from 'pages/search/[thema]'
 import { useBook } from 'provider/bookAndTestament'
-import { useRouter } from 'next/router'
 
 interface IPagination {
   datas: IVersesProps[]
@@ -16,13 +14,7 @@ interface IPagination {
   url: string
 }
 
-const Pagination: React.FC<IPagination> = ({
-  totalPages,
-  pageSelected,
-  filterSelected,
-  url,
-  datas
-}) => {
+const Pagination: React.FC<IPagination> = ({ totalPages, pageSelected }) => {
   let [resize, setResize] = useState(false)
   let [resizeP, setResizeP] = useState(false)
 
@@ -101,11 +93,6 @@ const Pagination: React.FC<IPagination> = ({
             setPg(pageSelected + 1)
             window.scrollTo({ top: 0, behavior: 'smooth' })
           }}
-          /*href={{
-            pathname: `${url}/${(
-              pageSelected + 1
-            ).toString()}/${filterSelected.toLowerCase()}`
-          }}*/
         >
           Próximo
           {<MdKeyboardArrowRight size={18} />}

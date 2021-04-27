@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const BookList = styled.div`
   display: flex;
@@ -12,7 +12,11 @@ export const BookList = styled.div`
   & + div {
     margin-top: 70px;
   }
-`;
+
+  @media only screen and (max-width: 730px) {
+    max-width: 90%;
+  }
+`
 export const TestamentList = styled.h3`
   background-color: #fff;
   width: 100%;
@@ -22,12 +26,12 @@ export const TestamentList = styled.h3`
   padding: 20px;
   margin-top: 40px;
   text-align: center;
-  font-size: 26px;
+  font-size: 1.6rem;
   letter-spacing: 1px;
   position: relative;
 
   ::before {
-    content: "";
+    content: '';
     display: block;
     width: 100%;
     height: 4px;
@@ -38,27 +42,31 @@ export const TestamentList = styled.h3`
     top: 0;
     left: 0;
   }
-`;
+`
 
 export const ListVersicle = styled.ul`
   list-style: none;
 
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 3.2rem;
 
-  margin-top: 40px;
+  margin-top: 2.5rem;
 
-  align-content: flex-start;
-`;
+  @media only screen and (max-width: 730px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+`
 export const VersicleItem = styled.li`
-  width: 180px;
-  height: 45px;
+  width: 11.25rem;
+  height: 2.8rem;
 
   background-color: #fff;
   border-radius: 6px;
 
-  margin-top: 18px;
+  margin-top: 1.1rem;
 
   display: flex;
   align-items: center;
@@ -80,4 +88,10 @@ export const VersicleItem = styled.li`
     opacity: background 0.3;
     transform: translateX(-10px);
   }
-`;
+  @media only screen and (max-width: 460px) {
+    width: 10rem;
+  }
+  @media only screen and (max-width: 280px) {
+    width: 8.5rem;
+  }
+`

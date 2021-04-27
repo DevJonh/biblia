@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const Container = styled.div`
   width: 65%;
@@ -22,4 +22,17 @@ export const Container = styled.div`
       margin-top: 30px;
     }
   }
-`;
+  @media only screen and (max-width: 730px) {
+    width: 100%;
+  }
+  @media only screen and (max-width: 460px) {
+    width: 100%;
+    padding: 0 30px;
+  }
+  @media only screen and (max-width: 460px) {
+    padding: 0 15px;
+    div {
+      padding: 20px 15px;
+    }
+  }
+`

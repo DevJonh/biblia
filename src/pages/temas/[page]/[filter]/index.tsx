@@ -50,11 +50,7 @@ const Temas: React.FC<ITemasProps> = ({ page, filter }) => {
       <MainHeader />
       <Content>
         <TitleHeader title="Temas na Bíblia" borderBottomComplet={true} />
-        <ListAlphabet
-          filter={filter}
-          page={Number(page)}
-          letters={alphabetList}
-        />
+        <ListAlphabet filter={filter} letters={alphabetList} />
         {dataFiltered.result !== [] && <Themes themas={dataFiltered.result} />}
 
         <Pagination

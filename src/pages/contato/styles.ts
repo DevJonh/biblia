@@ -65,6 +65,30 @@ export const Form = styled.form`
       color: #23353f;
     }
   }
+
+  @media only screen and (max-width: 800px) {
+    padding: 0 60px 0 20px;
+    fieldset div {
+      width: 100%;
+    }
+    button {
+      width: 25%;
+    }
+  }
+  @media only screen and (max-width: 460px) {
+    padding: 0 30px 0 10px;
+    fieldset div {
+      width: 100%;
+    }
+    button {
+      width: 35%;
+    }
+  }
+  @media only screen and (max-width: 280px) {
+    button {
+      width: 50%;
+    }
+  }
 `
 
 export default Form

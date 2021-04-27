@@ -18,7 +18,7 @@ export const Container = styled.div<IContainerProps>`
 
   border: 1px solid #23353f;
   border-radius: 6px;
-  padding: ${(props) => (props.resize ? '20px 10px' : '20px 40px')};
+  padding: ${(props) => (props.resize ? '1.25rem 0.6rem' : '1.25rem 2.5rem')};
 
   a.button {
     text-decoration: none;
@@ -30,8 +30,8 @@ export const Container = styled.div<IContainerProps>`
     font-weight: 500;
     border: 1px solid #23353f;
     border-radius: 6px;
-    padding: 10px 15px;
-    font-size: 16px;
+    padding: 0.6rem 0.9rem;
+    font-size: 1rem;
 
     transition: all 0.3s;
     color: #23353f;
@@ -52,12 +52,12 @@ export const Container = styled.div<IContainerProps>`
     justify-content: space-between;
     align-items: center;
 
-    margin: ${(props) => (props.resize ? '0px 5px' : '0px 20px')};
+    margin: ${(props) => (props.resize ? '0px .3rem' : '0px 1.25rem')};
 
     li {
       border: 1px solid #23353f;
       border-radius: 6px;
-      padding: 10px 15px;
+      padding: 0.6rem 0.9rem;
 
       cursor: pointer;
       transition: all 0.3s;
@@ -81,6 +81,14 @@ export const Container = styled.div<IContainerProps>`
           color: #fff;
         }
       }
+    }
+  }
+  @media only screen and (max-width: 460px) {
+    width: max-content;
+    a.button {
+      display: none;
+      visibility: hidden;
+      opacity: 0;
     }
   }
 `
