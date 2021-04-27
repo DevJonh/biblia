@@ -8,7 +8,7 @@ import axios from '../../services/axios'
 import { Container, FooterContainer } from './styles'
 import { GetStaticProps } from 'next'
 import Loading from 'components/Loading'
-import alphabet from 'utils/alphabet'
+import temas from 'utils/temas'
 
 export interface IVersesProps {
   book: {
@@ -62,8 +62,8 @@ export default Search
 export async function getStaticPaths() {
   let paths: object[] = []
 
-  alphabet.forEach((alph) => {
-    paths.push({ params: { thema: alph.toLowerCase() } })
+  temas.forEach((tema) => {
+    paths.push({ params: { thema: tema.toLowerCase() } })
   })
 
   return {
@@ -73,12 +73,19 @@ export async function getStaticPaths() {
 }
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
+  console.log(params)
   const searchs = await axios
     .post('/verses/search', {
       version: 'acf',
       search: params?.thema
     })
     .then((res) => res.data)
+
+  if (!searchs) {
+    return {
+      notFound: true
+    }
+  }
 
   return {
     props: {

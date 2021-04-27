@@ -72,7 +72,7 @@ export async function getStaticPaths() {
   let paths: object[] = []
 
   books.forEach(({ name, chapters }) => {
-    for (let index = 1; index < chapters; index++) {
+    for (let index = 1; index <= chapters; index++) {
       paths.push({ params: { book: name, chapter: index.toString() } })
     }
   })

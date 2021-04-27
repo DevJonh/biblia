@@ -48,31 +48,37 @@ const Main = ({ booksAT, booksNT }: ITotalBooks) => {
 export default Main
 
 export const getStaticProps: GetStaticProps = async () => {
-  const books: IBooks[] = await axios.get('/books').then((response) => {
-    return response.data
-  })
+  try {
+    const books: IBooks[] = await axios.get('/books').then((response) => {
+      return response.data.json()
+    })
 
-  let booksAT: IListBookProps = {
-    testament: 'Antigo Testamento',
-    books: []
-  }
-  let booksNT: IListBookProps = {
-    testament: 'Novo Testamento',
-    books: []
-  }
-
-  books.forEach((book) => {
-    if (book.testament === 'VT') {
-      booksAT.books.push(book.name)
-    } else if (book.testament === 'NT') {
-      booksNT.books.push(book.name)
+    let booksAT: IListBookProps = {
+      testament: 'Antigo Testamento',
+      books: []
     }
-  })
+    let booksNT: IListBookProps = {
+      testament: 'Novo Testamento',
+      books: []
+    }
 
-  return {
-    props: {
-      booksAT,
-      booksNT
+    books.forEach((book) => {
+      if (book.testament === 'VT') {
+        booksAT.books.push(book.name)
+      } else if (book.testament === 'NT') {
+        booksNT.books.push(book.name)
+      }
+    })
+
+    return {
+      props: {
+        booksAT,
+        booksNT
+      }
+    }
+  } catch (error) {
+    return {
+      notFound: true
     }
   }
 }
