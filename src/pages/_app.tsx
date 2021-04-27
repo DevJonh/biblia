@@ -9,8 +9,8 @@ function App({ Component, pageProps }: AppProps) {
     <>
       <Head>
         <title>Bíblia Sagrada</title>
-        <link rel="shortcut icon" href="/img/icon-512.png" />
-        <link rel="apple-touch-icon" href="/img/icon-512.png" />
+        <link rel="shortcut icon" href="/logo.ico" />
+        <link rel="apple-touch-icon" href="/logo.ico" />
         <meta
           name="description"
           content="A simple project started to work with Typescript, React, NextJS and Styled Components"
