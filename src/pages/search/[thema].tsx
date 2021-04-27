@@ -73,7 +73,6 @@ export async function getStaticPaths() {
 }
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
-  console.log(params)
   const searchs = await axios
     .post('/verses/search', {
       version: 'acf',

@@ -50,7 +50,7 @@ export default Main
 export const getStaticProps: GetStaticProps = async () => {
   try {
     const books: IBooks[] = await axios.get('/books').then((response) => {
-      return response.data.json()
+      return response.data
     })
 
     let booksAT: IListBookProps = {
