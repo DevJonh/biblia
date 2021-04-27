@@ -1,38 +1,56 @@
-![React Avançado](https://raw.githubusercontent.com/React-Avancado/boilerplate/master/public/img/logo-gh.svg)
+## Bíblia Sagrada
 
-This is a [Next.js](https://nextjs.org/) boilerplate to be used in a course called [React Avançado](https://reactavancado.com.br/).
+<p align="center">
+  <img alt="Github top language" src="https://img.shields.io/github/languages/top/DevJonh/biblia?color=56BEB8">
 
-## What is inside?
+  <img alt="Github language count" src="https://img.shields.io/github/languages/count/DevJonh/biblia?color=56BEB8">
 
-This project uses lot of stuff as:
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/DevJonh/biblia?color=56BEB8">
 
-- [TypeScript](https://www.typescriptlang.org/)
-- [NextJS](https://nextjs.org/)
-- [Styled Components](https://styled-components.com/)
-- [Jest](https://jestjs.io/)
-- [React Testing Library](https://testing-library.com/docs/react-testing-library/intro)
-- [Storybook](https://storybook.js.org/)
-- [Eslint](https://eslint.org/)
-- [Prettier](https://prettier.io/)
-- [Husky](https://github.com/typicode/husky)
+  <img alt="License" src="https://img.shields.io/github/license/DevJonh/biblia?color=56BEB8">
 
-## Getting Started
+</p>
 
-@@ -14,6 +30,17 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
+### 🧐 About
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+Desenvolvi um bíblia web para praticar a utilização (SSR) do NextJS para geração de páginas dinâmicas.
+A Bíblia Sagrada é a palavra de Deus revelada à humanidade, nenhum outro livro possui tamanha riqueza. Nela encontramos o propósito divino para o homem além da orientação doutrinária requerida para nos edificar na vida cristã.
 
-## Commands
+### ‼ Pré-Requisitos
 
-- `dev`: runs your application on `localhost:3000`
-- `build`: creates the production build version
-- `start`: starts a simple server with the build production code
-- `lint`: runs the linter in all components and pages
-- `test`: runs jest to test all components and pages
-- `test:watch`: runs jest in watch mode
-- `storybook`: runs storybook on `localhost:6006`
-- `build-storybook`: create the build version of storybook
+Antes de iniciar, você precisará ter o [Git](https://git-scm.com) e o [Node](https://nodejs.org/en/) instalados em sua máquina
 
-## Learn More
+### 🏁 Começando
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+# Clone este projeto
+$ git clone https://github.com/DevJonh/marvelquiz-base.git
+
+# Acesse
+$ cd marvelquiz
+
+# Instalação das dependências
+$ yarn
+
+# Inicie o projeto
+$ yarn dev
+
+# O servidor inicializará em: http://localhost:3000
+```
+
+## 🚀 Deployment <a name = "deployment"></a>
+
+Add additional notes about how to deploy this on a live system.
+
+## 💻 Tecnologias
+
+- [API](https://www.abibliadigital.com.br/) - API
+- [NextJS](https://nextjs.org/) - Server Framework
+- [React](https://reactjs.org/) - Web Framework
+- [Styled-Components](https://styled-components.com/) - CSS in JS
+- [Typescript](https://www.typescriptlang.org/) - Linguagem de Programação
+- [NodeJs](https://nodejs.org/en/) - Server Environment
+
+## ✍️ Authors
+
+- [@DevJonh](https://github.com/DevJonh) - Ideia e iniciação do projeto

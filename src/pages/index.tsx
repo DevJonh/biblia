@@ -31,7 +31,7 @@ const Main = ({ booksAT, booksNT }: ITotalBooks) => {
           <TitleHeader title="bíblia sagrada" borderBottomComplet={false} />
           <Description>
             A Bíblia Sagrada é a palavra de Deus revelada à humanidade, nenhum
-            outro livro possui tamanho riqueza. Nela encontramos o propósito
+            outro livro possui tamanha riqueza. Nela encontramos o propósito
             divino para o homem além da orientação doutrinária requerida para
             nos edificar na vida cristã.
           </Description>
