@@ -106,7 +106,6 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
     props: {
       page: params?.page,
       filter: params?.filter
-    },
-    revalidate: 1800
+    }
   }
 }
